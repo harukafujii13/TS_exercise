@@ -77,7 +77,8 @@ const exerciseOne = () => {
     const sequence: number[] = Array.from(Array(10).keys());
     const animals: string[] = ['pangolin', 'aardvark', 'echidna', 'binturong'];
     const stringsAndNumbers:(string|number)[] = [1, 'one', 2, 'two', 3, 'three'];
-    const allMyArrays: (string|number)[][] = [sequence, animals, stringsAndNumbers];
+    const allMyArrays: (string|number)[][] = [sequence, animals, stringsAndNumbers]; //Arrayの中にArraygがnestされているから
+    const allMyArrays2: Array<Array<number|string>> = [sequence, animals, stringsAndNumbers]; 
 
     console.log('Exercise 1.5', allMyArrays);
 
